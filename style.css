@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+    background-color: rgb(148, 255, 124);
+    height: 400px;
+    background-image: url("images/top.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+h1 {
+  color: aliceblue;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.top-nav {
+  margin-top: 40px;
+}
+
+.top-nav ul {
+  margin: 100px auto;
+  list-style: none;
+  color: #ffffff;
+  padding-left: 0;
+}
+
+.top-nav ul a {
+  display: block;
+  width: 150px;
+  text-align: center;
+  margin:0 auto;
+  margin-bottom: 10px;
+  color: #71f581;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 5px 10px;
+}
+
+main {
+  width: 95%;
+  margin: 50px auto;
+}
+
+.nk_img{
+    width: 100%;
+}
+
+.flex{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.flex img{
+    width:350px;
+    margin: 0 auto;
+}
+
+.flex-reverse-mb {
+  flex-direction: column-reverse;
+}
+
+.creeper{
+    display: none;
+}
+
+.flex div{
+  width: 250px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 980px){
+
+main {
+  width: 960px;
+  margin: 0px auto;
+}
+
+h1 {
+  color: #ffffff;
+  padding-top: 100px;
+  text-align: center;
+  padding-right: 400px;
+}
+
+.top-nav {
+  margin-top: 40px;
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin: 200px auto;
+  list-style: none;
+}
+
+.top-nav ul a {
+  display: inline;
+  width: auto;
+  color: #71f581;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 6px 10px;
+  transition: all 0.3s ease;
+  border: 1px solid green;
+  border-radius: 12px;
+  box-shadow: -3px -3px 5px rgb(28, 28, 28);
+}
+
+.top-nav ul a:hover {
+  color: #ffffff;
+  background-color: rgb(101, 255, 101);
+  box-shadow: none;
+}
+
+.flex{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex h2{
+    text-align: center;
+}
+
+.flex img{
+    width:350px;
+    margin: 0 ;
+}
+
+.flex div{
+ margin: 0;
+}
+
+.h2{
+  text-align: center;
+}
+
+.creeper{
+  display: block;
+  width: 60px;
+  position: absolute;
+  top:100px;
+  left: calc(50% + 200px);
+  animation: upAndDown 2s linear infinite alternate;
+  animation-timing-function: linear;
+}
+
+.iframe-container {
+  display: flex;       /* 横並びにする */
+  gap: 10px;           /* iframeの間隔 */
+}
+
+#game-container {
+  width: 600px;       /* ゲームの横幅 */
+  height: 400px;      /* ゲームの縦幅 */
+  margin: 400 0 0 0;  /* 中央寄せ */
+}
+#Scroll-Game {
+  width: 100%;        /* コンテナに合わせる */
+  height: 100%;
+}
+
+
+.HTML ul {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin: 30px auto;
+  list-style: none;
+}
+
+.HTML ul a {
+  display: inline;
+  width: auto;
+  color: #71f581;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 6px 10px;
+  transition: all 0.3s ease;
+  border: 1px solid green;
+  border-radius: 12px;
+  box-shadow: -3px -3px 5px rgb(28, 28, 28);
+}
+
+.HTML ul a:hover {
+  color: #ffffff;
+  background-color: rgb(101, 255, 101);
+  box-shadow: none;
+}
+
+
+}
+section h3 {
+  text-align: center;
+  margin: 32px 0;
+}
+
+footer{
+ background-color: rgb(157, 225, 157);
+ padding:30px;
+ text-align: center;
+}
+
+@keyframes upAndDown {
+  0%   { transform: translate(0,-40px); }
+  6.25% { transform: translate(15px,-37px); }
+  12.5% { transform: translate(28px,-28px); }
+  18.75% { transform: translate(37px,-15px); }
+  25%  { transform: translate(40px,0); }
+  31.25% { transform: translate(37px,15px); }
+  37.5% { transform: translate(28px,28px); }
+  43.75% { transform: translate(15px,37px); }
+  50%  { transform: translate(0,40px); }
+  56.25% { transform: translate(-15px,37px); }
+  62.5% { transform: translate(-28px,28px); }
+  68.75% { transform: translate(-37px,15px); }
+  75%  { transform: translate(-40px,0); }
+  81.25% { transform: translate(-37px,-15px); }
+  87.5% { transform: translate(-28px,-28px); }
+  93.75% { transform: translate(-15px,-37px); }
+  100% { transform: translate(0,-40px); }
+}
+

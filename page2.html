@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>自己紹介</title>
+</head>
+
+<body>
+  <header>
+    <h1>マイクラ</h1>
+
+    <nav class="top-nav">
+      <ul>
+        <li><a href="#Website-Creation">サイトづくり</a></li>
+        <li><a href="#Useful-Sites">便利サイト</a></li>
+        <li><a href="#Code-Examples">コード紹介</a></li>
+        <li><a href="index.html">前のページ</a></li>
+        <li><a href="game.html">次のページ</a></li>
+      </ul>
+    </nav>
+
+    <img class="creeper" src="images/creeper.png" alt="creeper">
+  </header>
+
+  <main>
+    <section id="Website-Creation" class="flex">
+ <h2>このサイトを作っていて一番困ったこと</h2>
+ <P>このサイトを作っていて僕が一番困ったことは、最後のページにゲームをどうやって埋め込むかということです。
+最初はWOOF JSで作ったコードをそのままHTMLの中に入れれば動くと思っていたのですが、何度やってもうまく動きませんでした。
+「このコードは本当に合っているのかな？」と疑問に思い、いろいろなサイトで調べてみることにしました。
+すると、WOOF JSと普通のJavaScriptは仕組みが違うということを知り、とても驚きました。
+そこからHTML・CSS・JavaScriptの関係を少しずつ理解しながら試行錯誤を続け、最終的には自分のサイトの中でゲームを表示させることができました。
+この経験を通して、分からないことがあったら調べて試してみることの大切さを学びました。</P> 
+ </section>
+ <section id="Useful-Sites" class="flex">
+ <h2>便利なサイト</h2>
+  <p>ここでは、僕がサイトを作るときに特に便利だと思ったサイトを紹介します。
+HTMLやCSSの書き方を調べたり、イラストやアイコンを探したりするときにとても役立ちました。
+これからサイトを作ってみたい人にもおすすめのサイトなので、よかったらぜひ見てみてください。
+（リンクを押すとそのサイトに移動します。）</p>
+<nav class = "HTML">
+<ul>
+  <li><a href="https://lab.nakanaka.me/tips/2025/1541/">HTML&CSS</a></li>
+  <li><a href="https://www.irasutoya.com/">イラスト</a></li>
+  <li><a href="https://icooon-mono.com/">アイコン</a></li>
+  </ul>
+  </nav> 
+  </section>
+  <section id="Code-Examples" class="flex">
+    <h2>コード紹介</h2>
+    <p>この下には、実際に僕が作ったJavaScriptのコードを使った簡単なゲームのコードを表示しています。
+自分で作ったコードがサイトの中で動いたときはとても嬉しかったです。
+まだまだ改良できる部分もあるので、これから少しずつ機能を増やしていきたいと思っています。
+コピーして改造して更に良くしてもいいです。自由に使ってみてください。この２つは右がヘビゲーム、左が横スクロールゲームと言う感じに分けています。あ、注意ですけどこのコード本当のJSを貼っているのでWOOFJSでは使えません。</p>
+<div class="iframe-container">
+<iframe src="script.js" width="600" height="500"></iframe>
+<iframe src="For display purposes.js" width="600"height="500"></iframe>
+</div>
+</section>
+<h2>コメント</h2>
+<p>こちらはこのサイトのコメントです。次のページもあるのでぜひそちらも見てみてから、このコメントを書いてみてください。</p>
+<div class="comment-box">
+<input id="name" placeholder="名前">
+<textarea id="comment" placeholder="コメントを書く"></textarea>
+<button onclick="send()">送信</button>
+</div>
+
+<div id="comments"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="comment.js"></script>
+</main>
+
+  <footer>
+    <h4>ゴリラコーポレーション ltd.</h4>
+    <a href="mailto:yosaku0738@gmail.com">yosaku0738@gmail.com</a>
+    <div>&copy; 夜桜</div>
+  </footer>
+</body>
+</html>
